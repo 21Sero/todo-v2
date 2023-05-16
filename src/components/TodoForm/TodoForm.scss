@@ -1,0 +1,60 @@
+.container {
+	width: 50%;
+	min-width: 320px;
+
+	&__form {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+
+		&__input {
+			background-color: transparent;
+			color: whitesmoke;
+			border: none;
+			outline: none;
+			font-size: 18px;
+			border-bottom: 1px solid lightblue;
+			padding: 5px;
+
+			&::placeholder {
+				color: lightblue;
+			}
+
+			&__label {
+				padding: 1rem;
+				background-color: #866efb;
+				border-radius: 15px;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				gap: 1rem;
+			}
+
+			&__icon {
+				cursor: pointer;
+				font-size: 32px;
+			}
+		}
+
+		&__button {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			font-size: 35px;
+
+
+
+			&__icon {
+				color: #866efb;
+				transition: color .3s ease;
+
+				&:hover {
+					color: gray;
+				}
+			}
+		}
+	}
+}
